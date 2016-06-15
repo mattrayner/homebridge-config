@@ -1,0 +1,5 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NTP Autostart
+Comment=Start NTPD and automatically sync time
+Exec=/usr/bin/lxterm -e 'sudo ntpd -d'

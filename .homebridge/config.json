@@ -1,0 +1,23 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "012-12-016"
+    },
+
+    "description": "This is an example configuration file with one fake accessory and one fake platform.",
+
+    "platforms": [
+       {
+         "platform": "BelkinWeMo",
+         "name": "WeMo Platform",
+         "expected_accessories" : "3",
+         "timeout" : "25",
+         "no_motion_timer": "60",
+         "homekit_safe" : "1"
+       }
+    ]  
+    
+}
+
