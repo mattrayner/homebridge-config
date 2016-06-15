@@ -12,7 +12,7 @@
        {
          "platform": "BelkinWeMo",
          "name": "WeMo Platform",
-         "expected_accessories" : "3",
+         "expected_accessories" : "0",
          "timeout" : "25",
          "no_motion_timer": "60",
          "homekit_safe" : "1"
