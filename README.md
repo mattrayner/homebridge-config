@@ -25,7 +25,7 @@ Next, install Node from [here][npm-install-url].
 ```bash
 git clone https://github.com/mattrayner/homebridge-config.git
 cd homebridge-config
-sudo npm install -g homebridge
+sudo npm install -g homebridge homebridge-platform-wemo
 sh install.sh
 ```
 
