@@ -18,12 +18,16 @@ sudo apt-get remove ntpd
 sudo apt-get install openntpd git make libavahi-compat-libdnssd-dev
 sudo systemctl enable openntpd.service
 sudo systemctl start openntpd.service
+```
+
+Next, install Node from [here][npm-install-url].
+
+```bash
 git clone https://github.com/mattrayner/homebridge-config.git
 cd homebridge-config
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-sudo apt-get install -y nodejs
-npm install -g homebridge
+sudo npm install -g homebridge
 sh install.sh
 ```
 
 [home-bridge]: https://github.com/nfarina/homebridge
+[npm-install-url]: http://blog.wia.io/installing-node-js-v4-0-0-on-a-raspberry-pi
