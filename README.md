@@ -13,13 +13,16 @@ Enable 'easy' setup of HomeBridge on a Raspbian based RaspberryPi
 
 ```bash
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get uninstall ntpd
+sudo apt-get dist-upgrade
+sudo apt-get remove ntpd
 sudo apt-get install openntpd git make libavahi-compat-libdnssd-dev
+sudo systemctl enable openntpd.service
+sudo systemctl start openntpd.service
+git clone https://github.com/mattrayner/homebridge-config.git
+cd homebridge-config
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get install -y nodejs
-git clone git@github.com:mattrayner/homebridge-config.git
-cd homebridge-config
+npm install -g homebridge
 sh install.sh
 ```
 
