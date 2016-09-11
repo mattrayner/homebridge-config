@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'Creatign Directories'
+echo 'Creating Directories'
 mkdir -p ~/.config/autostart/
 mkdir -p ~/.homebridge
 
